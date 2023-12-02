@@ -2,16 +2,14 @@ package day1;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Day1 {
     public static void main(String[] args) throws FileNotFoundException {
         Scanner in = new Scanner(new File("C:\\Users\\sathy\\OneDrive\\Documents\\GitHub\\Advent Of Code 2023\\src\\day1\\day1.txt"));
-        long sum = 0;
+        int sum = 0;
 
         // Part 1
-        /*
         while (in.hasNext()) {
             String text = in.nextLine().strip().replaceAll("[a-z]|[A-Z]", "");
 
@@ -22,10 +20,8 @@ public class Day1 {
 
             sum += Integer.parseInt(text);
         }
-         */
 
         // Part 2
-        /*
         while (in.hasNext()) {
             String text = in.nextLine().strip();
             if (text.contains("one")) {
@@ -66,7 +62,6 @@ public class Day1 {
 
             sum += Integer.parseInt(text);
         }
-        */
 
         System.out.println("The sum is: " + sum);
     }
